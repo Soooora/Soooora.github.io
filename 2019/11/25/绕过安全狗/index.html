@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="web," />
 
 
 
@@ -80,6 +80,7 @@
 
 
 <meta name="description" content="首先测试and 1 发现有安全狗   换成.0 .1的方式尝试绕过(.0正常 .1出错 说明存在注入)     用之前的常规方法一直没绕过去(多参数污染，大小写，双重编码，缓冲区溢出)，突然想起许久之前的xss绕过安全狗姿势。两张图说明一切，前提是我得知了安全狗检测SQL注入攻击的一个防止绕过的规则，之前的安全狗是可以使用&#x2F;**&#x2F;的方式绕过的。也就是通过注释符构造payload，让安全狗误认为无法">
+<meta name="keywords" content="web">
 <meta property="og:type" content="article">
 <meta property="og:title" content="绕过安全狗">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;25&#x2F;%E7%BB%95%E8%BF%87%E5%AE%89%E5%85%A8%E7%8B%97&#x2F;index.html">
@@ -93,7 +94,7 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;web1&#x2F;5.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;web1&#x2F;6.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;web1&#x2F;7.png">
-<meta property="og:updated_time" content="2019-11-25T10:41:11.300Z">
+<meta property="og:updated_time" content="2019-12-02T02:45:42.296Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;web1&#x2F;1.png">
 
@@ -243,7 +244,7 @@
   
   
 
-  <article class="post post-type-WEB" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
@@ -287,6 +288,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/" itemprop="url" rel="index">
+                    <span itemprop="name">web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -342,11 +365,33 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/web/" rel="tag"># web</a>
+          
+        </div>
+      
 
       
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/02/%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%BC%8F%E6%B4%9E/" rel="prev" title="格式化字符串漏洞">
+                格式化字符串漏洞 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -415,14 +460,32 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
@@ -456,7 +519,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2019 &mdash; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
